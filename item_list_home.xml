@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_lay"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingPrefix">
+
+        <ImageView
+            android:id="@+id/item_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@mipmap/image"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item_img"
+            android:background="#fff">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp">
+
+
+                <TextView
+                    android:id="@+id/item_title_tv"
+                    fontPath="helr65w.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Emtiness ft. justin tiblekar"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/time_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_title_tv">
+
+                    <ImageView
+                        android:id="@+id/about_us_img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@mipmap/about_us" />
+
+                    <TextView
+                        android:id="@+id/time_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/about_us_img"
+                        android:paddingLeft="5dp"
+                        android:text="18 hours ago" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/title_desc_tv"
+                    fontPath="helr45w.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time_lay"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Lorem ipsum dolor sit amet, quam dolor nibh nonummy, amet quisque nunc"
+                    android:textSize="13sp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
